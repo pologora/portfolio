@@ -1,0 +1,158 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.button {
+  position: relative;
+  padding: 0.7em 1.3em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.button.type5 {
+  border: 2px solid black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  padding: 0.6em 1.4em;
+  border-radius: 2px;
+  padding-bottom: 0.7em;
+}
+
+.button.type5:hover {
+  border-radius: 25px;
+}
+
+.button.type1 {
+  @apply text-home;
+}
+
+.button.type1::after,
+.button.type1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.button.type1::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  @apply border-b-home;
+  @apply border-r-home;
+}
+
+.button.type1::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  @apply border-t-home;
+  @apply border-l-home;
+}
+
+.button.type1:hover::after,
+.button.type1:hover::before {
+  width: 110%;
+  height: 110%;
+}
+
+.button.type2 {
+  @apply text-about;
+}
+
+.button.type2::after,
+.button.type2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  @apply bg-about;
+  transition: all 0.3s ease;
+  transform: scale(0.85);
+}
+
+.button.type2:hover::before {
+  top: 0;
+  transform: scale(1);
+}
+
+.button.type2:hover::after {
+  transform: scale(1);
+}
+
+.button.type3 {
+  @apply text-projects;
+}
+
+.button.type3::after,
+.button.type3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.button.type3::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  @apply border-b-projects;
+  @apply border-r-projects;
+}
+
+.button.type3::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  @apply border-t-projects;
+  @apply border-l-projects;
+}
+
+.button.type3:hover::after,
+.button.type3:hover::before {
+  @apply border-projects;
+  width: 104%;
+  height: 107%;
+}
+
+.button.type4 {
+  @apply text-contact;
+}
+
+.button.type4::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  @apply bg-contact;
+  transition: width 0.3s ease-in-out;
+}
+
+.button.type4::after {
+  bottom: 0;
+}
+
+.button.type4:hover::after {
+  width: 100%;
+}
