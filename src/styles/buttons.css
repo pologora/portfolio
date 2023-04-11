@@ -11,6 +11,7 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  transition: all 1s ease;
 }
 
 .button.type5 {
