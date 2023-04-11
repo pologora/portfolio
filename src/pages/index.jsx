@@ -23,7 +23,7 @@ export default function Home() {
         handleMenuClose={handleMenuClose}
         isMenuOpen={isMenuOpen}
       />
-      <HomePage isMenuOpen={isMenuOpen} />
+      <HomePage />
       <About />
       <Projects />
       <Contact />
