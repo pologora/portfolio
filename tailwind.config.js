@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['Lato', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
       },
     },
     colors: {
-      home: '#6C5858',
-      about: '#4E8E70',
+      home: '#A52A2A',
+      about: '#138808',
       projects: '#4978F2',
       contact: '#CF9707',
       text_main: '#010B13',

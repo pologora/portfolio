@@ -6,7 +6,7 @@ function Navlink({
   return (
     <li>
       <Link
-        className={`text-xs font-bold uppercase z-100" button ${type}`}
+        className={`text-xs font-bold uppercase z-100" button font-lato ${type}`}
         href={url}
         onClick={handleMenuClose}
       >

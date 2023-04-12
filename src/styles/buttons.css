@@ -157,3 +157,54 @@
 .button.type4:hover::after {
   width: 100%;
 }
+
+.home::after,
+.home::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+  @apply border-home;
+}
+
+.home::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  @apply border-b-home;
+  @apply border-r-home;
+}
+
+.home::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  @apply border-t-home;
+  @apply border-l-home;
+}
+
+.about::after,
+.about::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  @apply bg-about;
+}
+
+.about::after {
+  top: 0;
+  left: -10%;
+}
+
+.about::before {
+  bottom: 0;
+  left: -10%;
+}

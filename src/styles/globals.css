@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    /* font-family: 'Lato', 'sans-serif'; */
+    @apply font-lato;
     scroll-behavior: smooth;
   }
 
@@ -21,13 +21,35 @@
     @apply text-3xl sm:text-4xl;
   }
 
+  h3 {
+    @apply text-xl;
+  }
+
   section {
-    @apply min-h-screen flex justify-center place-items-center;
+    @apply min-h-screen flex justify-center border-b;
   }
 }
 
 @layer components {
   .container {
-    @apply p-10 max-w-4xl  m-4 sm:m-8 md:m-12 lg:m-16 xl:m-20 cursor-default  z-[-10];
+    @apply p-10 max-w-4xl  mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20  mt-28;
+  }
+  .small {
+    @apply w-4 md:w-6;
+  }
+  .medium {
+    @apply w-8 md:w-12;
+  }
+
+  .full {
+    @apply w-16 md:w-24;
+  }
+
+  .tech-list li {
+    @apply mr-2 text-about;
+  }
+
+  p {
+    @apply text-base sm:text-lg;
   }
 }
