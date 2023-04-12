@@ -6,7 +6,7 @@ import TechList from './TechList';
 import ChooseBioPanel from './ChooseBioPanel';
 
 function About() {
-  const [componentToRender, setComponentToRender] = useState('');
+  const [componentToRender, setComponentToRender] = useState(<FullText />);
 
   const handleChangeText = (e) => {
     switch (e.target.name) {

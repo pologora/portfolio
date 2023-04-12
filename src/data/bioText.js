@@ -18,7 +18,7 @@ export const full = [
 ];
 
 export const medium = [
-  `Hello! As a motivated computer science student in my last year, I specialize in designing eye-catching
+  `Hello there! As a motivated computer science student in my last year, I specialize in designing eye-catching
      and user-friendly websites. I'm on the hunt for a Junior Web Developer opportunity to apply my knowledge
       and further develop my skills in a professional context.`,
   `When I'm not coding, I enjoy stimulating my 
@@ -29,7 +29,7 @@ export const medium = [
 ];
 
 export const small = [
-  ` Hi there! I'm a computer science student,
+  ` Hi! I'm a computer science student,
    specializing in creating visually engaging and user-friendly websites.
     Looking for a Junior Web Developer role to grow my skills. Chess enthusiast,
      sci-fi reader, and film lover!`,

@@ -10,7 +10,7 @@ function ChooseBioPanel({ handleChangeText }) {
     setActiveText(e.target.name);
   };
   return (
-    <div className="flex flex-col place-items-center">
+    <div className="flex flex-col place-items-center my-4">
       <h3 className="uppercase text-sm">Choose bio length:</h3>
       <div>
         {buttons.map((item) => (

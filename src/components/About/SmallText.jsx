@@ -5,7 +5,9 @@ function SmallText() {
   return (
     <article>
       {small.map((item, i) => (
-        <p key={i}>{item}</p>
+        <p className="my-5" key={i}>
+          {item}
+        </p>
       ))}
     </article>
   );
