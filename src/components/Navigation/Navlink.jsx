@@ -9,6 +9,7 @@ function Navlink({
         className={`text-xs font-bold uppercase z-100" button font-lato ${type}`}
         href={url}
         onClick={handleMenuClose}
+        scroll={false}
       >
         {title}
       </Link>

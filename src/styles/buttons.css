@@ -208,3 +208,26 @@
   bottom: 0;
   left: -10%;
 }
+
+.projects::after,
+.projects::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 102%;
+  height: 103%;
+  border: 2px solid;
+  border-radius: 2px;
+}
+
+.projects::after {
+  bottom: 0;
+  right: 0;
+  @apply border-projects;
+}
+
+.projects::before {
+  top: 0;
+  left: 0;
+  @apply border-projects;
+}

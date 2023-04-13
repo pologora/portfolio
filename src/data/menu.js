@@ -2,7 +2,7 @@ export default [
   {
     type: 'type1',
     title: 'home',
-    url: '/',
+    url: '/#home',
   },
   {
     type: 'type2',
