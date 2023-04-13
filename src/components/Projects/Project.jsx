@@ -20,19 +20,20 @@ function Project({
           </div>
         </div>
         <p className="mb-5">{about}</p>
-        <h3 className="text-center mb-5">Tech:</h3>
-        <ul className="flex flex-wrap gap-4">
-          {tech.map((item) => (
-            <li className="text-projects font-extralight" key={item}>
-              {item}
-            </li>
-          ))}
-        </ul>
       </div>
       <div className="projects relative z-[-10]">
         <div className="">
           <Image src={screenShoots[0]} />
         </div>
+      </div>
+      <div className="mt-5">
+        <ul className="flex flex-wrap gap-4">
+          {tech.map((item) => (
+            <li className="text-projects" key={item}>
+              <p className="text-sm">{item}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </article>
   );
