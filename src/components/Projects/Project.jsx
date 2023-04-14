@@ -8,9 +8,9 @@ function Project({
   return (
     <article>
       <div className="mb-10">
-        <div className="flex justify-between md:place-items-center place-items-end gap-10 mb-10 flex-col md:flex-row">
-          <h2>{title}</h2>
-          <div className="flex gap-10 md:gap-6">
+        <div className="flex justify-between md:place-items-center place-items-center gap-10 mb-10 flex-col md:flex-row">
+          <h3 className="uppercase font-semibold">{title}</h3>
+          <div className="flex gap-10 md:gap-6 text-projects">
             <a href={links.github} target="blank">
               <FaGithub size={25} />
             </a>
@@ -29,9 +29,12 @@ function Project({
       <div className="mt-5">
         <ul className="flex flex-wrap gap-4">
           {tech.map((item) => (
-            <li className="text-projects" key={item}>
-              <p className="text-sm">{item}</p>
-            </li>
+            <div className="flex place-items-center gap-1">
+              <div className="w-2 h-2 bg-projects" />
+              <li className="text-projects" key={item}>
+                <p className="text-sm">{item}</p>
+              </li>
+            </div>
           ))}
         </ul>
       </div>

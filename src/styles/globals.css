@@ -29,13 +29,13 @@
   }
 
   section {
-    @apply min-h-screen flex justify-center;
+    @apply min-h-screen flex justify-center py-32;
   }
 }
 
 @layer components {
   .container {
-    @apply p-10 max-w-4xl  mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20  mt-28;
+    @apply p-10 max-w-4xl  mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-20;
   }
   .small {
     @apply w-4 md:w-6;

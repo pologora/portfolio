@@ -18,8 +18,8 @@ module.exports = {
       contact: '#CF9707',
       text_main: '#010B13',
       text_secondary: '#343434',
-      background_main: '#FFFAFA',
-      background_secondary: '#FFFFF0',
+      background_main: '#f8fbf8',
+      background_secondary: '#f5f5f5',
     },
   },
 

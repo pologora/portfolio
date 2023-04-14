@@ -26,11 +26,11 @@ function About() {
   };
 
   return (
-    <section id="about">
+    <section id="about" className="bg-background_secondary relative z-[-10]">
       <div className="container">
         <h2 className="text-about mb-10">About Me</h2>
         <ChooseBioPanel handleChangeText={handleChangeText} />
-        <div className="py-4 about relative z-[-10]">
+        <div className="py-4 about relative z-[-1]">
           {componentToRender}
           <p className="my-5">
             By the way, here are a few technologies I&apos;ve been working with recently:
