@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply font-lato;
+    @apply font-sans;
   }
 
   .scroll-smooth {

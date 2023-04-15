@@ -3,7 +3,7 @@ import Project from './Project';
 import projects from '../../data/projects';
 
 function Projects() {
-  const projectsListElements = projects.map((item) => <Project {...item} />);
+  const projectsListElements = projects.map((item) => <Project key={item.title} {...item} />);
   return (
     <section id="projects">
       <div className="container">

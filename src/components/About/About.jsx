@@ -2,11 +2,12 @@ import { useState } from 'react';
 import SmallText from './SmallText';
 import MediumText from './MediumText';
 import FullText from './FullText';
-import TechList from './TechList';
+import TechList from '../shared/TechList';
 import ChooseBioPanel from './ChooseBioPanel';
+import techList from '../../data/techList';
 
 function About() {
-  const [componentToRender, setComponentToRender] = useState(<FullText />);
+  const [componentToRender, setComponentToRender] = useState(<MediumText />);
 
   const handleChangeText = (e) => {
     switch (e.target.name) {
@@ -26,16 +27,16 @@ function About() {
   };
 
   return (
-    <section id="about" className="bg-background_secondary relative z-[-10]">
+    <section id="about" className="bg-background_secondary relative">
       <div className="container">
         <h2 className="text-about mb-10">About Me</h2>
         <ChooseBioPanel handleChangeText={handleChangeText} />
-        <div className="py-4 about relative z-[-1]">
+        <div className="py-4 about relative">
           {componentToRender}
           <p className="my-5">
             By the way, here are a few technologies I&apos;ve been working with recently:
           </p>
-          <TechList />
+          <TechList tech={techList} color="about" />
         </div>
       </div>
     </section>

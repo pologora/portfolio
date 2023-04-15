@@ -4,7 +4,8 @@ import { useState } from 'react';
 const buttons = ['small', 'medium', 'full'];
 
 function ChooseBioPanel({ handleChangeText }) {
-  const [activeText, setActiveText] = useState('full');
+  const [activeText, setActiveText] = useState('medium');
+
   const handleChangeClick = (e) => {
     handleChangeText(e);
     setActiveText(e.target.name);

@@ -1,10 +1,28 @@
-import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
 import { IoMdOpen } from 'react-icons/io';
+import { useEffect, useState } from 'react';
+import TechList from '../shared/TechList';
+import ScreenShootsList from './ScreenShootsList';
 
 function Project({
-  title, about, tech, links, screenShoots,
+  title, about, tech, links, screenShots,
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const checkIsMobile = () => {
+    if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
+      const { userAgent } = window.navigator;
+      const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        userAgent,
+      );
+      setIsMobile(isMobileDevice);
+    }
+  };
+
+  useEffect(() => {
+    checkIsMobile();
+  }, []);
+
   return (
     <article>
       <div className="mb-10">
@@ -21,22 +39,13 @@ function Project({
         </div>
         <p className="mb-5">{about}</p>
       </div>
-      <div className="projects relative z-[-10]">
-        <div className="">
-          <Image src={screenShoots[0]} />
+      <div className="">
+        <div>
+          <ScreenShootsList screenShots={isMobile ? screenShots.mobile : screenShots.web} />
         </div>
       </div>
-      <div className="mt-5">
-        <ul className="flex flex-wrap gap-4">
-          {tech.map((item) => (
-            <div className="flex place-items-center gap-1">
-              <div className="w-2 h-2 bg-projects" />
-              <li className="text-projects" key={item}>
-                <p className="text-sm">{item}</p>
-              </li>
-            </div>
-          ))}
-        </ul>
+      <div className="mt-10">
+        <TechList tech={tech} color="projects" />
       </div>
     </article>
   );

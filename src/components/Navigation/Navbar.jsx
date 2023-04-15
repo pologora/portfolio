@@ -30,7 +30,7 @@ function Navbar({ handleMenuClose, handleMenuOpen, isMenuOpen }) {
 
   return (
     <nav
-      className={`fixed w-full h-16  z[100] px-4 2xl:px-16 ${
+      className={`fixed w-full h-16  z-10 px-4 2xl:px-16 ${
         isShadow && 'shadow-xl'
       } bg-background_main`}
     >
