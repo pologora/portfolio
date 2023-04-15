@@ -22,6 +22,7 @@ export default [
   {
     type: 'type5',
     title: 'resume',
-    url: '/#contact',
+    url: '/resume.pdf',
+    download: 'resume.pdf',
   },
 ];

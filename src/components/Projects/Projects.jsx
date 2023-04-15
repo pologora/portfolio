@@ -7,7 +7,7 @@ function Projects() {
   return (
     <section id="projects">
       <div className="container">
-        <h2 className="text-projects mb-20">My Projects</h2>
+        <h2 className="text-projects mb-20">Featured Projects</h2>
         {projectsListElements}
       </div>
     </section>

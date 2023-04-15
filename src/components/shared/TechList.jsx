@@ -18,7 +18,7 @@ function TechList({ color, tech }) {
     </div>
   ));
   return (
-    <div className="flex flex-col gap-4 my-5 md:flex-row md:justify-between">{techListElement}</div>
+    <div className="flex flex-col gap-4 my-5 md:flex-row md:justify-evenly">{techListElement}</div>
   );
 }
 export default TechList;

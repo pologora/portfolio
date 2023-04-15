@@ -10,6 +10,11 @@ import androidGreetingsStart from '../../public/assets/projects/time_management/
 import androidList from '../../public/assets/projects/time_management/android_list.jpg';
 import androidMain from '../../public/assets/projects/time_management/android_main.jpg';
 import androidStart from '../../public/assets/projects/time_management/android_start.jpg';
+import punksHome from '../../public/assets/projects/cpunks/home.png';
+import punksGallery from '../../public/assets/projects/cpunks/gallery.png';
+import punksMint from '../../public/assets/projects/cpunks/mint.png';
+import punksMyPunks from '../../public/assets/projects/cpunks/myPunks.png';
+import punksSoloPunk from '../../public/assets/projects/cpunks/solo_punk.png';
 
 export default [
   {
@@ -37,6 +42,28 @@ export default [
         androidGreetingsEnd,
         androidList,
       ],
+    },
+  },
+  {
+    title: 'NFT project on Cronos blockchain',
+    about: `The "CPunks" NFT Collection is an innovative project on the Cronos blockchain, consisting of 10,000
+     uniquely generated characters.
+     With meticulous design and attention to detail, no two characters are identical.
+
+    The collection features 9 alien species, 24 intelligent apes, and 88 zombies, all possessing 87 unique attributes,
+     including rare traits, accessories, and special abilities.`,
+    tech: {
+      'Front-end': ['React', 'CSS'],
+      'Back-end': ['Solidity'],
+    },
+
+    links: {
+      live: 'https://cronos-cpunks.netlify.app/',
+      github: 'https://github.com/pologora/punks',
+    },
+    screenShots: {
+      web: [punksHome, punksGallery, punksMint, punksMyPunks, punksSoloPunk],
+      mobile: [punksHome, punksGallery, punksMint, punksMyPunks, punksSoloPunk],
     },
   },
 ];

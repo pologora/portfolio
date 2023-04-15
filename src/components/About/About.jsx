@@ -29,7 +29,7 @@ function About() {
   return (
     <section id="about" className="bg-background_secondary relative">
       <div className="container">
-        <h2 className="text-about mb-10">About Me</h2>
+        <h2 className="text-about mb-10">Who I Am</h2>
         <ChooseBioPanel handleChangeText={handleChangeText} />
         <div className="py-4 about relative">
           {componentToRender}

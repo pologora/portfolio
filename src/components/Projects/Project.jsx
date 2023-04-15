@@ -7,25 +7,26 @@ import ScreenShootsList from './ScreenShootsList';
 function Project({
   title, about, tech, links, screenShots,
 }) {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null);
 
   const checkIsMobile = () => {
-    if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
-      const { userAgent } = window.navigator;
-      const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        userAgent,
-      );
-      setIsMobile(isMobileDevice);
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth < 600);
     }
   };
 
   useEffect(() => {
     checkIsMobile();
+    window.addEventListener('resize', checkIsMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+    };
   }, []);
 
   return (
-    <article>
-      <div className="mb-10">
+    <article className="mb-40">
+      <div className="my-20">
         <div className="flex justify-between md:place-items-center place-items-center gap-10 mb-10 flex-col md:flex-row">
           <h3 className="uppercase font-semibold">{title}</h3>
           <div className="flex gap-10 md:gap-6 text-projects">
@@ -47,6 +48,7 @@ function Project({
       <div className="mt-10">
         <TechList tech={tech} color="projects" />
       </div>
+      <div className="border-b-2 border-b-projects my-10 " />
     </article>
   );
 }

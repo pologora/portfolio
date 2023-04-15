@@ -5,9 +5,8 @@ function ScreenShootsList({ screenShots }) {
   const [activeScreen, setActiveScreen] = useState(screenShots[0]);
 
   useEffect(() => {
-    const id = setTimeout(() => {}, 2000);
-    return () => clearTimeout(id);
-  }, [activeScreen]);
+    setActiveScreen(screenShots[0]);
+  }, [screenShots]);
 
   const handleChangeImageClick = (e) => {
     setActiveScreen(screenShots[e.target.name]);

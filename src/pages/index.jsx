@@ -4,6 +4,7 @@ import Contact from '../components/Contact/Contact';
 import Navbar from '../components/Navigation/Navbar';
 import Projects from '../components/Projects/Projects';
 import HomePage from '../components/HomePage/HomePage';
+import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 }
