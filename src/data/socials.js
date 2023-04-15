@@ -18,7 +18,7 @@ export default [
     link: 'https://www.linkedin.com/in/oleksandr-lysakov/',
   },
   {
-    text: 'You can also download',
+    text: 'Download my',
     title: 'Resume',
     link: '/resume.pdf',
   },
