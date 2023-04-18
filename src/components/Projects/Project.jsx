@@ -25,7 +25,7 @@ function Project({
   }, []);
 
   return (
-    <article className="mb-40">
+    <article className="mb-40 last:mb-0">
       <div className="my-20">
         <div className="flex justify-between md:place-items-center place-items-center gap-10 mb-10 flex-col md:flex-row">
           <h3 className="uppercase font-semibold">{title}</h3>
