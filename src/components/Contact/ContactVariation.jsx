@@ -13,7 +13,7 @@ function ContactVariation({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          download={title === 'Resume' ? 'resume.pdf' : undefined}
+          download={title === 'Resume' ? 'OleksandrLysakovCV.pdf' : undefined}
           className={`${linkClassName} font-bold`}
         >
           {title}

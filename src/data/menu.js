@@ -22,7 +22,7 @@ export default [
   {
     type: 'type5',
     title: 'resume',
-    url: '/resume.pdf',
-    download: 'resume.pdf',
+    url: '/OleksandrLysakovCV.pdf',
+    download: 'OleksandrLysakovCV.pdf',
   },
 ];

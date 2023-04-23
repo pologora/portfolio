@@ -12,7 +12,7 @@ function Navlink({
           onClick={handleMenuClose}
           target="_blank"
           rel="noopener noreferrer"
-          download="resume.pdf"
+          download="OleksandrLysakovCV.pdf"
         >
           {title}
         </a>

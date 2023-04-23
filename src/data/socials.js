@@ -20,6 +20,6 @@ export default [
   {
     text: 'Download my',
     title: 'Resume',
-    link: '/resume.pdf',
+    link: '/OleksandrLysakovCV.pdf',
   },
 ];
