@@ -15,11 +15,11 @@ export default [
     text: 'Connect with me on',
     title: ' LinkedIn',
     color: 'projects',
-    link: 'https://www.linkedin.com/in/oleksandr-lysakov/',
+    link: 'https://www.linkedin.com/in/oleksandr-wojtyla/',
   },
   {
     text: 'Download my',
     title: 'Resume',
-    link: '/OleksandrLysakovCV.pdf',
+    link: '/OleksandrWojtylaCV.pdf',
   },
 ];
