@@ -4,7 +4,7 @@ function HomePage() {
       <div className="container home z-[-10] relative h-full">
         <h2 className="text-text_secondary">Hey, welcome to my digital playground!</h2>
         <h1 className="my-10 text-text_main">
-          I&apos;m Oleksandr Lysakov, but you can call me
+          I&apos;m Oleksandr Wojtyla, but you can call me
           {' '}
           <span className="text-home">Olek</span>
         </h1>
