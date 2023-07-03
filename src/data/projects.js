@@ -19,7 +19,7 @@ import punksSoloPunk from '../../public/assets/projects/cpunks/solo_punk.png';
 export default [
   {
     title: 'Employee Time Management System',
-    about: `This is a commercial, full stack project that was developed based on client needs and is now
+    about: `This is a commercial, freelance full stack  project that was developed based on client needs and is now
        being used by a warehouse company to manage employee work schedules, track vacations, and generate various reports. 
        The system includes a mobile app for employees and an admin web application for managers.`,
     tech: {
