@@ -2,7 +2,7 @@ import { FaGithub } from 'react-icons/fa';
 import { IoMdOpen } from 'react-icons/io';
 import { useEffect, useState } from 'react';
 import TechList from '../shared/TechList';
-import ScreenShootsList from './ScreenShootsList';
+import ScreenShotsList from './ScreenShotsList';
 
 function Project({
   title, about, tech, links, screenShots,
@@ -42,7 +42,7 @@ function Project({
       </div>
       <div className="">
         <div>
-          <ScreenShootsList screenShots={isMobile ? screenShots.mobile : screenShots.web} />
+          <ScreenShotsList screenShots={isMobile ? screenShots.mobile : screenShots.web} />
         </div>
       </div>
       <div className="mt-10">

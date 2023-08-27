@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-function ScreenShootsList({ screenShots }) {
+function ScreenShotsList({ screenShots }) {
   const [activeScreen, setActiveScreen] = useState(screenShots[0]);
 
   useEffect(() => {
@@ -34,4 +34,4 @@ function ScreenShootsList({ screenShots }) {
     </div>
   );
 }
-export default ScreenShootsList;
+export default ScreenShotsList;
