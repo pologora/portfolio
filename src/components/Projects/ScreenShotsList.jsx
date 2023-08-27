@@ -8,8 +8,8 @@ function ScreenShotsList({ screenShots }) {
     setActiveScreen(screenShots[0]);
   }, [screenShots]);
 
-  const handleChangeImageClick = (e) => {
-    setActiveScreen(screenShots[e.target.name]);
+  const handleChangeImageClick = (index) => {
+    setActiveScreen(screenShots[index]);
   };
 
   const changeScreenElements = screenShots.map((item, index) => (
@@ -19,8 +19,7 @@ function ScreenShotsList({ screenShots }) {
         activeScreen.src === item.src && 'bg-projects'
       }`}
       type="button"
-      name={index}
-      onClick={(e) => handleChangeImageClick(e)}
+      onClick={() => handleChangeImageClick(index)}
       aria-label="Change screenshot"
     />
   ));
