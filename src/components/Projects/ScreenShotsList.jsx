@@ -5,7 +5,15 @@ function ScreenShotsList({ screenShots }) {
   const [activeImageMobile, setActiveImageMobile] = useState(mobile[0]);
   const [activeImageDesktop, setActiveImageDesctop] = useState(web[0]);
 
+  const preloadImages = (imageArray) => {
+    imageArray.forEach((image) => {
+      const img = new Image();
+      img.src = path + image;
+    });
+  };
+
   useEffect(() => {
+    preloadImages(web.concat(mobile));
     setActiveImageMobile(mobile[0]);
     setActiveImageDesctop(web[0]);
   }, [web, mobile]);
