@@ -19,7 +19,7 @@ function ScreenShotsList({ screenShots }) {
     <button
       key={item}
       className={`h-3 w-3 border-projects border-2 ${
-        activeImageMobile === item || (activeImageDesktop === item && 'bg-projects')
+        activeImageMobile === item || activeImageDesktop === item ? 'bg-projects' : ''
       }`}
       type="button"
       onClick={() => handleChangeImageClick(index)}

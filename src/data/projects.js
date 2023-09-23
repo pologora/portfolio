@@ -25,8 +25,8 @@ export default [
         'raports2.png',
       ],
       mobile: [
-        'android-main.jpg',
-        'android-start.jpg',
+        'android_main.jpg',
+        'android_start.jpg',
         'android_greetings_end.jpg',
         'android_end.jpg',
         'android_greetings_end.jpg',
