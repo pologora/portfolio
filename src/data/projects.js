@@ -35,6 +35,25 @@ export default [
     },
   },
   {
+    title: 'Audiophile e-commerce website',
+    about: `E-commerce website I developed to demonstrate my skills as a
+     frontend developer. This multi-page full responsive e-commerce site, built with Next.js,
+     TypeScript, and Tailwind CSS, showcases my proficiency in these modern web development technologies.
+     I meticulously translated a Figma design file into a fully functional and responsive website.`,
+    tech: {
+      'Front-end': ['Next.js', 'TypeScript', 'Tailwindcss'],
+    },
+    links: {
+      live: 'https://audiophile-website-pologora.vercel.app/',
+      github: 'https://github.com/pologora/audiophile-website',
+    },
+    screenShots: {
+      path: '/assets/projects/audiophile/',
+      web: ['desktop_1.png', 'desktop_2.png', 'desktop_3.png', 'desktop_4.png', 'desktop_5.png'],
+      mobile: ['mobile_1.png', 'mobile_2.png', 'mobile_3.png', 'mobile_4.png', 'mobile_5.png'],
+    },
+  },
+  {
     title: 'NFT project on Cronos blockchain',
     about: `The "CPunks" NFT Collection is an innovative project on the Cronos blockchain, consisting of 10,000
      uniquely generated characters.
