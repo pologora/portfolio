@@ -1,29 +1,11 @@
 import { FaGithub } from 'react-icons/fa';
 import { IoMdOpen } from 'react-icons/io';
-import { useEffect, useState } from 'react';
 import TechList from '../shared/TechList';
 import ScreenShotsList from './ScreenShotsList';
 
 function Project({
   title, about, tech, links, screenShots,
 }) {
-  const [isMobile, setIsMobile] = useState(null);
-
-  const checkIsMobile = () => {
-    if (typeof window !== 'undefined') {
-      setIsMobile(window.innerWidth < 600);
-    }
-  };
-
-  useEffect(() => {
-    checkIsMobile();
-    window.addEventListener('resize', checkIsMobile);
-
-    return () => {
-      window.removeEventListener('resize', checkIsMobile);
-    };
-  }, []);
-
   return (
     <article className="mb-40 last:mb-0">
       <div className="my-20">
@@ -42,7 +24,7 @@ function Project({
       </div>
       <div className="">
         <div>
-          <ScreenShotsList screenShots={isMobile ? screenShots.mobile : screenShots.web} />
+          <ScreenShotsList screenShots={screenShots} />
         </div>
       </div>
       <div className="mt-10">

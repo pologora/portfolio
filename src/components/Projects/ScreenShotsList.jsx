@@ -1,22 +1,25 @@
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 function ScreenShotsList({ screenShots }) {
-  const [activeScreen, setActiveScreen] = useState(screenShots[0]);
+  const { web, mobile, path } = screenShots;
+  const [activeImageMobile, setActiveImageMobile] = useState(mobile[0]);
+  const [activeImageDesktop, setActiveImageDesctop] = useState(web[0]);
 
   useEffect(() => {
-    setActiveScreen(screenShots[0]);
-  }, [screenShots]);
+    setActiveImageMobile(mobile[0]);
+    setActiveImageDesctop(web[0]);
+  }, [web, mobile]);
 
   const handleChangeImageClick = (index) => {
-    setActiveScreen(screenShots[index]);
+    setActiveImageMobile(mobile[index]);
+    setActiveImageDesctop(web[index]);
   };
 
-  const changeScreenElements = screenShots.map((item, index) => (
+  const changeScreenElements = web.map((item, index) => (
     <button
-      key={item.src}
+      key={item}
       className={`h-3 w-3 border-projects border-2 ${
-        activeScreen.src === item.src && 'bg-projects'
+        activeImageMobile === item || (activeImageDesktop === item && 'bg-projects')
       }`}
       type="button"
       onClick={() => handleChangeImageClick(index)}
@@ -27,7 +30,10 @@ function ScreenShotsList({ screenShots }) {
   return (
     <div>
       <div className="projects relative z-[-10]">
-        <Image src={activeScreen} alt="Project screenshot" />
+        <picture>
+          <source media="(min-width:640px)" srcSet={path + activeImageDesktop} />
+          <img src={path + activeImageMobile} alt="Project screenshot" />
+        </picture>
       </div>
       <div className="flex justify-center pt-10 gap-5">{changeScreenElements}</div>
     </div>

@@ -1,21 +1,3 @@
-import home from '../../public/assets/projects/time_management/home.png';
-import employees from '../../public/assets/projects/time_management/employees.png';
-import vacations from '../../public/assets/projects/time_management/vacations.png';
-import vacations2 from '../../public/assets/projects/time_management/vacations2.png';
-import raports from '../../public/assets/projects/time_management/raports.png';
-import raports2 from '../../public/assets/projects/time_management/raports2.png';
-import androidEnd from '../../public/assets/projects/time_management/android_end.jpg';
-import androidGreetingsEnd from '../../public/assets/projects/time_management/android_greetings_end.jpg';
-import androidGreetingsStart from '../../public/assets/projects/time_management/android_greetings_start.jpg';
-import androidList from '../../public/assets/projects/time_management/android_list.jpg';
-import androidMain from '../../public/assets/projects/time_management/android_main.jpg';
-import androidStart from '../../public/assets/projects/time_management/android_start.jpg';
-import punksHome from '../../public/assets/projects/cpunks/home.png';
-import punksGallery from '../../public/assets/projects/cpunks/gallery.png';
-import punksMint from '../../public/assets/projects/cpunks/mint.png';
-import punksMyPunks from '../../public/assets/projects/cpunks/myPunks.png';
-import punksSoloPunk from '../../public/assets/projects/cpunks/solo_punk.png';
-
 export default [
   {
     title: 'Employee Time Management System',
@@ -33,14 +15,22 @@ export default [
       github: 'https://github.com/pologora/employee_time_management',
     },
     screenShots: {
-      web: [home, employees, vacations, vacations2, raports, raports2],
+      path: '/assets/projects/time_management/',
+      web: [
+        'home.png',
+        'employees.png',
+        'vacations.png',
+        'vacations2.png',
+        'raports.png',
+        'raports2.png',
+      ],
       mobile: [
-        androidMain,
-        androidStart,
-        androidGreetingsStart,
-        androidEnd,
-        androidGreetingsEnd,
-        androidList,
+        'android-main.jpg',
+        'android-start.jpg',
+        'android_greetings_end.jpg',
+        'android_end.jpg',
+        'android_greetings_end.jpg',
+        'android_list.jpg',
       ],
     },
   },
@@ -62,8 +52,9 @@ export default [
       github: 'https://github.com/pologora/punks',
     },
     screenShots: {
-      web: [punksHome, punksGallery, punksMint, punksMyPunks, punksSoloPunk],
-      mobile: [punksHome, punksGallery, punksMint, punksMyPunks, punksSoloPunk],
+      path: '/assets/projects/cpunks/',
+      web: ['home.png', 'gallery.png', 'mint.png', 'myPunks.png', 'solo_punk.png'],
+      mobile: ['home.png', 'gallery.png', 'mint.png', 'myPunks.png', 'solo_punk.png'],
     },
   },
 ];
