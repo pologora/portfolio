@@ -1,14 +1,10 @@
-/* eslint-disable react/no-array-index-key */
-import { small } from '../../data/bioText';
+import { useTranslation } from 'react-i18next';
 
 function SmallText() {
+  const { t } = useTranslation();
   return (
     <article>
-      {small.map((item, i) => (
-        <p className="my-5" key={i}>
-          {item}
-        </p>
-      ))}
+      <p className="my-5">{t('about.biography.small.paragraph1')}</p>
     </article>
   );
 }

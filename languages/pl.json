@@ -1,0 +1,35 @@
+{
+  "home": {
+    "welcome": "Cześć, witaj w moim cyfrowym placu zabaw!",
+    "title": "Jestem Oleksandr Wojtyła, ale możesz mnie nazywać",
+    "name": "Olek",
+    "description": "Jestem front-end developerem, który stawia na tworzenie niesamowitych doświadczeń użytkownika. Zanurzmy się w to!"
+  },
+  "about": {
+    "title": "Kim jestem",
+    "techTitle": "Po za tym, kilka technologii z którymi ostatnio pracowałem:",
+    "biography": {
+      "title": "Wybierz długość biografii:",
+      "full": {
+        "paragraph1": "Witaj! Jestem świeżo upieczonym absolwentem informatyki o pasji do tworzenia wizualnie atrakcyjnych i przyjaznych użytkownikom stron internetowych. Zanim zacząłem przygodę w branży technologicznej, zdobyłem tytuł licencjata z zarządzania. Pomimo tego, moja prawdziwa pasja zawsze była związana z tworzeniem stron internetowych. Jako zdeterminowana i pilna osoba, ciągle dążę do doskonalenia swoich umiejętności i pozostaję na bieżąco z najnowszymi technologiami.",
+        "paragraph2": "W wolnym czasie znajdziesz mnie, jak doskonalę swoje umiejętności rozwiązywania problemów i myślenia strategicznego przy grze w szachy, zapuszczam się w nowe światy poprzez moje ulubione książki science fiction lub zanurzam się w fascynującym filmie. Te zajęcia to nie tylko hobby dla mnie - szachy rozwijają moje myślenie strategiczne, czytanie wspomaga moją wyobraźnię i umiejętność komunikacji, a filmy stanowią bogate źródło inspiracji w zakresie opowiadania historii i projektowania wizualnego.",
+        "paragraph3": "Jako świeży absolwent z niecierpliwością poszukuję stanowiska Junior Web Developera w firmie, gdzie mogę zastosować moje umiejętności i pasję do tworzenia stron internetowych oraz kontynuować rozwijanie się zawodowo. Jeśli znasz dostępne stanowiska lub wiesz o takich, które mogłyby być odpowiednie, chętnie się odezwij."
+      },
+      "medium": {
+        "paragraph1": "Witaj! Jako niedawno ukończony absolwent informatyki, specjalizuję się w projektowaniu atrakcyjnych wizualnie i przyjaznych użytkownikom stron internetowych. Szukam stanowiska Junior Web Developera, gdzie mogę zastosować swoją wiedzę, pasję i umiejętności w profesjonalnym kontekście.",
+        "paragraph2": "Kiedy nie zagłębiam się w kodzie, znajdziesz mnie, jak stymuluję swoje umysł w trakcie partii szachów, eksploruję wyobraźnię w świecie literatury science fiction i czerpię inspirację z przekonujących opowieści i estetyki wizualnej filmów.",
+        "paragraph3": "Teraz, jako dumny absolwent, jestem gotów dołączyć do innowacyjnej firmy, gdzie mogę przyczyniać się do projektów innowacyjnych, uczyć się od profesjonalistów z branży i rozwijać się jako programista webowy. Jeśli znasz jakieś możliwości lub są dostępne stanowiska, jestem całym uszami i chętnie wysłucham twojej propozycji."
+      },
+      "small": {
+        "paragraph1": "Cześć! Jestem świeżo upieczonym absolwentem informatyki, specjalizującym się w tworzeniu wizualnie atrakcyjnych i przyjaznych użytkownikom stron internetowych. Teraz poszukuję stanowiska Junior Web Developera, aby zastosować moje umiejętności i dalej się rozwijać w tej dziedzinie. Po godzinach jestem miłośnikiem szachów, czytelnikiem science fiction i kinomanem, zawsze gotowym do stymulowania umysłu i czerpania inspiracji z różnych źródeł!"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projekty"
+  },
+  "contact": {
+    "title": "Skontaktuj się!",
+    "description": "Zawsze chętnie rozmawiam o nowych możliwościach i współpracach. Możesz się ze mną skontaktować korzystając z poniższych sposobów:"
+  }
+}

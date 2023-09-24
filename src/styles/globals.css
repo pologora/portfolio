@@ -56,3 +56,46 @@
     @apply text-base sm:text-lg;
   }
 }
+
+.gradient-border {
+  border-image: linear-gradient(
+    90deg,
+    rgba(19, 136, 8, 1) 0%,
+    rgba(165, 42, 42, 1) 50%,
+    rgba(207, 151, 7, 1) 100%
+  );
+  border-image-slice: 1;
+  border-image-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.gradient-border:hover {
+  animation: borderMove 2s infinite linear;
+}
+
+@keyframes borderMove {
+  0% {
+    border-image-source: linear-gradient(
+      90deg,
+      rgba(19, 136, 8, 1) 0%,
+      rgba(73, 120, 242, 1) 50%,
+      rgba(207, 151, 7, 1) 100%
+    );
+  }
+  50% {
+    border-image-source: linear-gradient(
+      90deg,
+      rgba(207, 151, 7, 1) 100%,
+      rgba(73, 120, 242, 1) 50%,
+      rgba(19, 136, 8, 1) 0%
+    );
+  }
+  100% {
+    border-image-source: linear-gradient(
+      90deg,
+      rgba(19, 136, 8, 1) 100%,
+      rgba(73, 120, 242, 1) 0%,
+      rgba(207, 151, 7, 1) 100%
+    );
+  }
+}

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SmallText from './SmallText';
 import MediumText from './MediumText';
 import FullText from './FullText';
@@ -8,6 +9,7 @@ import techList from '../../data/techList';
 
 function About() {
   const [componentToRender, setComponentToRender] = useState(<MediumText />);
+  const { t } = useTranslation();
 
   const handleChangeText = (e) => {
     switch (e.target.name) {
@@ -29,13 +31,11 @@ function About() {
   return (
     <section id="about" className="bg-background_secondary relative">
       <div className="container">
-        <h2 className="text-about mb-10">Who I Am</h2>
+        <h2 className="text-about mb-10">{t('about.title')}</h2>
         <ChooseBioPanel handleChangeText={handleChangeText} />
         <div className="py-4 about relative">
           {componentToRender}
-          <p className="my-5">
-            By the way, here are a few technologies I&apos;ve been working with recently:
-          </p>
+          <p className="my-5">{t('about.techTitle')}</p>
           <TechList tech={techList} color="about" />
         </div>
       </div>

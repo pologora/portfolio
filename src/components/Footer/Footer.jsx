@@ -10,13 +10,13 @@ function Footer() {
       </div>
       <div className="flex justify-center gap-10 mt-4">
         <a href="https://github.com/pologora" target="blank">
-          <FaGithub size={25} />
+          <FaGithub size={25} className="hover:text-home" />
         </a>
         <a href="mailto:lysakov555@gmail.com" target="blank">
-          <AiOutlineMail size={25} />
+          <AiOutlineMail size={25} className="hover:text-contact" />
         </a>
         <a href="https://www.linkedin.com/in/oleksandr-wojtyla/" target="blank">
-          <AiFillLinkedin size={25} />
+          <AiFillLinkedin size={25} className="hover:text-projects" />
         </a>
       </div>
     </footer>

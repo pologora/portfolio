@@ -1,14 +1,12 @@
-import { full } from '../../data/bioText';
+import { useTranslation } from 'react-i18next';
 
 function FullText() {
+  const { t } = useTranslation();
   return (
     <article>
-      {full.map((item, i) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <p className="my-5" key={i}>
-          {item}
-        </p>
-      ))}
+      <p className="my-5">{t('about.biography.full.paragraph1')}</p>
+      <p className="my-5">{t('about.biography.full.paragraph2')}</p>
+      <p className="my-5">{t('about.biography.full.paragraph3')}</p>
     </article>
   );
 }

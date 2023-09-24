@@ -1,10 +1,14 @@
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navlink from './Navlink';
 import links from '../../data/menu';
+import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
 
 function Navbar({ handleMenuClose, handleMenuOpen, isMenuOpen }) {
   const [isShadow, setIsShadow] = useState(false);
+  const { i18n } = useTranslation();
+  const { language } = i18n;
 
   useEffect(() => {
     const handleShadow = () => {
@@ -23,7 +27,7 @@ function Navbar({ handleMenuClose, handleMenuOpen, isMenuOpen }) {
       key={item.type}
       type={item.type}
       url={item.url}
-      title={item.title}
+      title={item.title[language]}
       handleMenuClose={handleMenuClose}
     />
   ));
@@ -35,6 +39,7 @@ function Navbar({ handleMenuClose, handleMenuOpen, isMenuOpen }) {
       } bg-background_main`}
     >
       <ul className="hidden md:flex gap-8 justify-end items-center w-full h-full">
+        <LanguageSwitch />
         {linksElements}
       </ul>
 
@@ -63,7 +68,10 @@ function Navbar({ handleMenuClose, handleMenuOpen, isMenuOpen }) {
             </button>
           </div>
         )}
-        <ul className="flex flex-col place-items-center gap-12 mt-28 z-10">{linksElements}</ul>
+        <ul className="flex flex-col place-items-center gap-12 mt-28 z-10">
+          {linksElements}
+          <LanguageSwitch />
+        </ul>
       </div>
     </nav>
   );
