@@ -14,7 +14,7 @@ function ContactVariation({
           target="_blank"
           rel="noopener noreferrer"
           download={title === 'Resume' ? 'OleksandrLysakovCV.pdf' : undefined}
-          className={`${linkClassName} font-bold`}
+          className={`${linkClassName} font-bold hover:border-b`}
         >
           {title}
         </a>
