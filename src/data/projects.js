@@ -10,7 +10,7 @@ export default [
         Mobile: ['React Native', 'MongoDB Realm'],
       },
       links: {
-        live: 'https://best-ever-magazyn.netlify.app/',
+        live: 'https://test-magazyn.netlify.app/',
         github: 'https://github.com/pologora/employee_time_management',
       },
       screenShots: {
