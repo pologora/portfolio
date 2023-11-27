@@ -12,7 +12,7 @@ function Contact() {
         <h2 className="text-contact mb-10">{t('contact.title')}</h2>
         <p className="mb-5">{t('contact.description')}</p>
         <ul className="flex gap-4 flex-col border-b-contact border-b-2 pb-5">
-          {socials[language].map((item) => (
+          {socials[language]?.map((item) => (
             <ContactVariation {...item} key={item.title} />
           ))}
         </ul>

@@ -6,6 +6,9 @@ import ScreenShotsList from './ScreenShotsList';
 function Project({
   title, about, tech, links, screenShots,
 }) {
+  if (!screenShots) {
+    return <div>Loading...</div>;
+  }
   return (
     <article className="mb-40 last:mb-0">
       <div className="my-20">

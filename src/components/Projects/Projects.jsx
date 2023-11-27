@@ -6,6 +6,7 @@ import projects from '../../data/projects';
 function Projects() {
   const { t, i18n } = useTranslation();
   const { language } = i18n;
+  console.log(language);
   const projectsListElements = projects.map((item) => (
     <Project key={item.en.title} {...item[language]} />
   ));
@@ -13,6 +14,7 @@ function Projects() {
     <section id="projects">
       <div className="container">
         <h2 className="text-projects mb-20">{t('projects.title')}</h2>
+        {}
         {projectsListElements}
       </div>
     </section>
