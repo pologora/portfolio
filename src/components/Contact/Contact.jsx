@@ -6,6 +6,7 @@ import ContactVariation from './ContactVariation';
 function Contact() {
   const { i18n, t } = useTranslation();
   const { language } = i18n;
+
   return (
     <section id="contact" className="bg-background_secondary relative ">
       <div className="container">
