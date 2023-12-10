@@ -9,6 +9,6 @@ export default {
     'Material UI',
     'Tailwindcss',
   ],
-  'Back-end': ['MongoDB', 'REST API'],
+  'Back-end': ['MongoDB', 'REST API', 'Python', 'Flask RESTful'],
   Mobile: ['React Native'],
 };
