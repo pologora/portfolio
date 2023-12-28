@@ -1,6 +1,42 @@
 export default [
   {
     en: {
+      title: 'Audiophile e-commerce website',
+      about:
+        'E-commerce website I developed to demonstrate my skills as a frontend developer. This multi-page full responsive e-commerce site, built with Next.js, TypeScript, and Tailwind CSS, showcases my proficiency in these modern web development technologies. I meticulously translated a Figma design file into a fully functional and responsive website.',
+      tech: {
+        'Front-end': ['Next.js', 'TypeScript', 'Tailwindcss'],
+      },
+      links: {
+        live: 'https://audiophile-website-pologora.vercel.app/',
+        github: 'https://github.com/pologora/audiophile-website',
+      },
+      screenShots: {
+        path: '/assets/projects/audiophile/',
+        web: ['desktop_1.png', 'desktop_2.png', 'desktop_3.png', 'desktop_4.png', 'desktop_5.png'],
+        mobile: ['mobile_1.png', 'mobile_2.png', 'mobile_3.png', 'mobile_4.png', 'mobile_5.png'],
+      },
+    },
+    pl: {
+      title: 'Strona e-commerce Audiophile',
+      about:
+        'Strona e-commerce, którą stworzyłem, aby pokazać moje umiejętności jako front-end developera. Ta wielostronicowa, w pełni responsywna witryna e-commerce, zbudowana przy użyciu Next.js, TypeScript i Tailwind CSS, prezentuje moją biegłość w tych nowoczesnych technologiach webowych. Skrupulatnie przetłumaczyłem plik projektu Figma na w pełni funkcjonalną i responsywną witrynę internetową.',
+      tech: {
+        'Front-end': ['Next.js', 'TypeScript', 'Tailwindcss'],
+      },
+      links: {
+        live: 'https://audiophile-website-pologora.vercel.app/',
+        github: 'https://github.com/pologora/audiophile-website',
+      },
+      screenShots: {
+        path: '/assets/projects/audiophile/',
+        web: ['desktop_1.png', 'desktop_2.png', 'desktop_3.png', 'desktop_4.png', 'desktop_5.png'],
+        mobile: ['mobile_1.png', 'mobile_2.png', 'mobile_3.png', 'mobile_4.png', 'mobile_5.png'],
+      },
+    },
+  },
+  {
+    en: {
       title: 'Employee Time Management System',
       about:
         'This is a commercial, freelance full stack project that was developed based on client needs and is now being used by a warehouse company to manage employee work schedules, track vacations, and generate various reports. The system includes a mobile app for employees and an admin web application for managers.',
@@ -64,43 +100,6 @@ export default [
           'android_greetings_end.jpg',
           'android_list.jpg',
         ],
-      },
-    },
-  },
-
-  {
-    en: {
-      title: 'Audiophile e-commerce website',
-      about:
-        'E-commerce website I developed to demonstrate my skills as a frontend developer. This multi-page full responsive e-commerce site, built with Next.js, TypeScript, and Tailwind CSS, showcases my proficiency in these modern web development technologies. I meticulously translated a Figma design file into a fully functional and responsive website.',
-      tech: {
-        'Front-end': ['Next.js', 'TypeScript', 'Tailwindcss'],
-      },
-      links: {
-        live: 'https://audiophile-website-pologora.vercel.app/',
-        github: 'https://github.com/pologora/audiophile-website',
-      },
-      screenShots: {
-        path: '/assets/projects/audiophile/',
-        web: ['desktop_1.png', 'desktop_2.png', 'desktop_3.png', 'desktop_4.png', 'desktop_5.png'],
-        mobile: ['mobile_1.png', 'mobile_2.png', 'mobile_3.png', 'mobile_4.png', 'mobile_5.png'],
-      },
-    },
-    pl: {
-      title: 'Strona e-commerce Audiophile',
-      about:
-        'Strona e-commerce, którą stworzyłem, aby pokazać moje umiejętności jako front-end developera. Ta wielostronicowa, w pełni responsywna witryna e-commerce, zbudowana przy użyciu Next.js, TypeScript i Tailwind CSS, prezentuje moją biegłość w tych nowoczesnych technologiach webowych. Skrupulatnie przetłumaczyłem plik projektu Figma na w pełni funkcjonalną i responsywną witrynę internetową.',
-      tech: {
-        'Front-end': ['Next.js', 'TypeScript', 'Tailwindcss'],
-      },
-      links: {
-        live: 'https://audiophile-website-pologora.vercel.app/',
-        github: 'https://github.com/pologora/audiophile-website',
-      },
-      screenShots: {
-        path: '/assets/projects/audiophile/',
-        web: ['desktop_1.png', 'desktop_2.png', 'desktop_3.png', 'desktop_4.png', 'desktop_5.png'],
-        mobile: ['mobile_1.png', 'mobile_2.png', 'mobile_3.png', 'mobile_4.png', 'mobile_5.png'],
       },
     },
   },
