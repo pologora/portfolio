@@ -39,10 +39,10 @@ export default [
     en: {
       title: 'Employee Time Management System',
       about:
-        'This is a commercial, freelance full stack project that was developed based on client needs and is now being used by a warehouse company to manage employee work schedules, track vacations, and generate various reports. The system includes a mobile app for employees and an admin web application for managers.',
+        'This is a commercial, freelance full stack project that was developed based on client needs and is now being used by a warehouse company to manage employee work schedules, track vacations, and generate various reports. The system includes a mobile and web app for employees, an admin web application for managers.',
       tech: {
-        'Front-end': ['React', 'Material UI', 'Realm Web'],
-        'Back-end': ['MongoDB Atlas', 'MongoDB Realm Functions', 'RESTful APIs'],
+        'Front-end': ['React', 'Typescript', 'Material UI', 'Realm Web'],
+        'Back-end': ['Node.js', 'MongoDB Atlas', 'MongoDB Realm Functions', 'RESTful APIs'],
         Mobile: ['React Native', 'MongoDB Realm'],
       },
       links: {
