@@ -1,6 +1,60 @@
 export default [
   {
     en: {
+      title: 'Employee Time Management System',
+      about:
+        'This is a commercial, freelance full stack project that was developed based on client needs and is now being used by a warehouse company to manage employee work schedules, track vacations, and generate various reports. The system includes a mobile and web app for employees, an admin web application for managers.',
+      tech: {
+        'Front-end': ['React', 'Typescript', 'Material UI', 'Realm Web'],
+        'Back-end': ['Node.js', 'MongoDB Atlas', 'MongoDB Realm Functions', 'RESTful APIs'],
+        Mobile: ['React Native', 'MongoDB Realm'],
+      },
+      links: {
+        live: 'https://test-magazyn.netlify.app/',
+        github: 'https://github.com/pologora/employee_time_management',
+      },
+      screenShots: {
+        path: '/assets/projects/time_management/',
+        web: ['home.png', 'employees.png', 'vacations.png', 'vacations2.png', 'raports.png', 'raports2.png'],
+        mobile: [
+          'android_main.jpg',
+          'android_start.jpg',
+          'android_greetings_end.jpg',
+          'android_end.jpg',
+          'android_greetings_end.jpg',
+          'android_list.jpg',
+        ],
+      },
+    },
+    pl: {
+      title: 'System ewidencji pracy',
+      about:
+        'To jest komercyjny projekt full stack, który został opracowany na podstawie potrzeb klienta i jest obecnie używany przez firmę magazynową do zarządzania grafikami pracy pracowników, śledzenia urlopów i generowania różnych raportów. System obejmuje aplikację mobilną dla pracowników i aplikację internetową dla administratorów.',
+      tech: {
+        'Front-end': ['React', 'Material UI', 'Realm Web'],
+        'Back-end': ['MongoDB Atlas', 'MongoDB Realm Functions', 'RESTful APIs'],
+        Mobile: ['React Native', 'MongoDB Realm'],
+      },
+      links: {
+        live: 'https://test-magazyn.netlify.app',
+        github: 'https://github.com/pologora/employee_time_management',
+      },
+      screenShots: {
+        path: '/assets/projects/time_management/',
+        web: ['home.png', 'employees.png', 'vacations.png', 'vacations2.png', 'raports.png', 'raports2.png'],
+        mobile: [
+          'android_main.jpg',
+          'android_start.jpg',
+          'android_greetings_end.jpg',
+          'android_end.jpg',
+          'android_greetings_end.jpg',
+          'android_list.jpg',
+        ],
+      },
+    },
+  },
+  {
+    en: {
       title: 'Audiophile e-commerce website',
       about:
         'E-commerce website I developed to demonstrate my skills as a frontend developer. This multi-page full responsive e-commerce site, built with Next.js, TypeScript, and Tailwind CSS, showcases my proficiency in these modern web development technologies. I meticulously translated a Figma design file into a fully functional and responsive website.',
@@ -32,74 +86,6 @@ export default [
         path: '/assets/projects/audiophile/',
         web: ['desktop_1.png', 'desktop_2.png', 'desktop_3.png', 'desktop_4.png', 'desktop_5.png'],
         mobile: ['mobile_1.png', 'mobile_2.png', 'mobile_3.png', 'mobile_4.png', 'mobile_5.png'],
-      },
-    },
-  },
-  {
-    en: {
-      title: 'Employee Time Management System',
-      about:
-        'This is a commercial, freelance full stack project that was developed based on client needs and is now being used by a warehouse company to manage employee work schedules, track vacations, and generate various reports. The system includes a mobile and web app for employees, an admin web application for managers.',
-      tech: {
-        'Front-end': ['React', 'Typescript', 'Material UI', 'Realm Web'],
-        'Back-end': ['Node.js', 'MongoDB Atlas', 'MongoDB Realm Functions', 'RESTful APIs'],
-        Mobile: ['React Native', 'MongoDB Realm'],
-      },
-      links: {
-        live: 'https://test-magazyn.netlify.app/',
-        github: 'https://github.com/pologora/employee_time_management',
-      },
-      screenShots: {
-        path: '/assets/projects/time_management/',
-        web: [
-          'home.png',
-          'employees.png',
-          'vacations.png',
-          'vacations2.png',
-          'raports.png',
-          'raports2.png',
-        ],
-        mobile: [
-          'android_main.jpg',
-          'android_start.jpg',
-          'android_greetings_end.jpg',
-          'android_end.jpg',
-          'android_greetings_end.jpg',
-          'android_list.jpg',
-        ],
-      },
-    },
-    pl: {
-      title: 'System ewidencji pracy',
-      about:
-        'To jest komercyjny projekt full stack, który został opracowany na podstawie potrzeb klienta i jest obecnie używany przez firmę magazynową do zarządzania grafikami pracy pracowników, śledzenia urlopów i generowania różnych raportów. System obejmuje aplikację mobilną dla pracowników i aplikację internetową dla administratorów.',
-      tech: {
-        'Front-end': ['React', 'Material UI', 'Realm Web'],
-        'Back-end': ['MongoDB Atlas', 'MongoDB Realm Functions', 'RESTful APIs'],
-        Mobile: ['React Native', 'MongoDB Realm'],
-      },
-      links: {
-        live: 'https://test-magazyn.netlify.app',
-        github: 'https://github.com/pologora/employee_time_management',
-      },
-      screenShots: {
-        path: '/assets/projects/time_management/',
-        web: [
-          'home.png',
-          'employees.png',
-          'vacations.png',
-          'vacations2.png',
-          'raports.png',
-          'raports2.png',
-        ],
-        mobile: [
-          'android_main.jpg',
-          'android_start.jpg',
-          'android_greetings_end.jpg',
-          'android_end.jpg',
-          'android_greetings_end.jpg',
-          'android_list.jpg',
-        ],
       },
     },
   },

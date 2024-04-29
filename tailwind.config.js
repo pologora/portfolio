@@ -20,6 +20,7 @@ module.exports = {
       text_secondary: '#343434',
       background_main: '#f8fbf8',
       background_secondary: '#f5f5f5',
+      links: '#1A4D2E',
     },
   },
 
